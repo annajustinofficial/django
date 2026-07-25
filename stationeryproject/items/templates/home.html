@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stationery Shop Inventory System</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Stationery Shop Inventory System</h1>
+
+<p>
+Welcome to the Stationery Shop Inventory System.
+Manage all your stationery items easily.
+</p>
+
+<div class="buttons">
+
+<a href="{% url 'add_item' %}" class="btn">Add Item</a>
+
+<a href="{% url 'view_items' %}" class="btn">View Items</a>
+
+</div>
+
+<footer>
+    <p>ZIUKE INFOTECH OPC PRIVATE LIMITED - 2026</p>
+</footer>
+
+</div>
+
+</body>
+</html>
